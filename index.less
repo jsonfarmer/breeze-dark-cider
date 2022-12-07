@@ -1,0 +1,139 @@
+:root {
+	--sidebarColor: #2a2e32;
+	--sidebarColorDark: #2a2e32;
+	--sidebarColorMix: #2a2e32;
+	--baseColorMix: #1b1e20;
+	--keyColor: #3daee9;
+	--keyColor-rollover: #43c0fe;
+	--keyColor-pressed: #3089b6;
+	--keyColor-deepPressed: #1f485e;
+	--keyColor-disabled: rgba(28,113,216,0.35);
+}
+
+._svg-icon {
+    background: rgba(255, 255, 255, 1);
+}
+.app-chrome-item.generic {
+    opacity: 1;
+}
+.playback-button--small {
+	opacity: 1;
+}
+.content-inner {
+    border-radius: 4px;
+    border: 1px solid #3daee9;
+    background-color: #1b1e20;
+}
+#app.compact .content-inner {
+    zoom: 1;
+}
+.search-input {
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #5f6265;
+    border-top: 1px solid #5f6265;
+    border-bottom: 1px solid #5f6265;
+    font-family: inherit;
+    font-size: 14px;
+    background: #1b1e20;
+    color: white;
+    font-weight: 500;
+    padding-left: 32px;
+    position: relative;
+}
+.search-input:focus {
+    border: 1px solid var(--keyColor);
+}
+#app-content {
+    background-color: #2a2e32;
+    border-left: none;
+}
+div.album-header {
+	padding-bottom: 12px;
+}
+div#app {
+	--color1: var(--sidebarColor);
+	--color2: var(--sidebarColor);
+	--bgColor: transparent;
+	--bgWidth: 0px;
+	--bgHeight: 0px;
+	--chromeHeight: 55px;
+	--keyColor: #3daee9;
+	width: 100%;
+	height: 100%;
+	background: var(--sidebarColor);
+	color: white;
+	user-select: none;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	background-size: 400% 400%;
+
+	&.simplebg {
+		background: var(--sidebarColor);
+	}
+
+	button:hover {
+		.svg-icon {
+			--color: var(--keyColor);
+		}
+	}
+
+	.cd-mediaitem-list-item .listitem-content:hover {
+		background: #25495c;
+	}
+	.cd-mediaitem-list-item.mediaitem-selected {
+		background: #25495c;
+	}
+
+	.app-sidebar-footer {
+		border: 0px;
+	}
+
+	.app-chrome {
+		box-shadow: none;
+		background-color: var(--sidebarColorDark);
+
+		.app-chrome-item {
+			&.volume {
+				input[type='range'] {
+					background: #25495c;
+
+					&::-webkit-slider-thumb {
+						background: var(--keyColor);
+					}
+				}
+			}
+		}
+	}
+
+	.usermenu-item:hover {
+		background: var(--keyColor);
+	}
+
+	.md-btn.md-btn-primary {
+		background: var(--keyColor);
+		color: white;
+		border: 1px solid #25495c;
+		border-top: 1px solid #25495c;
+	}
+}
+
+#app-sidebar {
+	background: var(--sidebarColorDark);
+}
+
+#app.twopanel {
+	.app-chrome:not(.chrome-bottom)
+		.app-chrome--center
+		.top-nav-group
+		.app-sidebar-item:before {
+		background: var(--keyColor);
+	}
+
+	.app-chrome.chrome-bottom {
+		background: var(--sidebarColorDark);
+		box-shadow: none !important;
+	}
+}
