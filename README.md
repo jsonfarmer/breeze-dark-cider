@@ -1,3 +1,3 @@
 # Breeze Dark for [Cider](https://cider.sh)
 
-![breeze-dark-cider](https://user-images.githubusercontent.com/119978356/206373747-58293788-8d2c-482a-8488-866f48d9083d.png)
+![breeze-dark-cider-origin](https://user-images.githubusercontent.com/119978356/206374255-af78b08e-c9af-4a51-bef0-41c7fd702195.png)
